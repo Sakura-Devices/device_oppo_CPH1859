@@ -103,6 +103,7 @@ AB_OTA_UPDATER := false
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/oppo/CPH1859
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_oppo
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
