@@ -52,6 +52,10 @@ on fs
 on post-fs
 	mount none /system/etc/usb_audio_policy_configuration.xml /vendor/etc/usb_audio_policy_configuration.xml bind
 
+on post-fs-data
+    # Services
+    setprop init.svc.console stopped
+    
 on post-fs-boot
 
 on property:sys.boot_completed=1
