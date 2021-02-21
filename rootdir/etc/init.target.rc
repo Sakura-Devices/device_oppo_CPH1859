@@ -5,11 +5,16 @@ on init
    
     # Force disable ViLTE support
     setprop persist.vendor.vilte_support 0
+    
+    # Erase the para partition to prevent recovery-looping
+    start erase_para
 
 service charger /charger
     class charger
     group system shell input graphics
     seclabel u:r:charger:s0
+
+service erase_para /sbin/dd if=/dev/zero of=/dev/block/bootdevice/by-name/para
 
 on charger
     start kpoc_charger
