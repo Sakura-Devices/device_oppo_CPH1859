@@ -115,3 +115,11 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # Boot
 sys.vendor.shutdown.waittime=500
+
+# Memory optimization
+ro.sys.fw.bservice_enable=true
+ro.sys.fw.bservice_limit=5
+ro.sys.fw.bservice_age=5000
+ro.am.reschedule_service=true
+ro.sys.fw.bg_apps_limit=24 
+
