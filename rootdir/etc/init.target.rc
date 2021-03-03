@@ -1,4 +1,8 @@
 on init
+    
+    # Delete Keystore OEM Hals
+    rm vendor/lib64/hw/keystore.mt6771.so
+    rm vendor/lib64/hw/keystore.oppo6771_17065.so
 
     # bind mount libmtk-ril.so
     mount none /system/lib64/libmtk-ril.so /vendor/lib64/libmtk-ril.so bind
