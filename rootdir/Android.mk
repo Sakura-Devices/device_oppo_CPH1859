@@ -17,7 +17,6 @@ LOCAL_SRC_FILES    := etc/set_zram.sh
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/init
 include $(BUILD_PREBUILT)
 
-
 include $(CLEAR_VARS)
 LOCAL_MODULE       := fstab.mt6771
 LOCAL_MODULE_TAGS  := optional
@@ -26,3 +25,10 @@ LOCAL_SRC_FILES    := etc/fstab.mt6771
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)
 include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE := ktweak.sh
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := EXECUTABLES
+LOCAL_SRC_FILES := etc/ktweak.sh
+LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/init
+include $(BUILD_PREBUILT)
