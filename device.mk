@@ -42,7 +42,7 @@ PRODUCT_PACKAGES += \
     Flipendo
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/pixel_experience_2020.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_experience_2020.xml
+    $(LOCAL_PATH)/configs/pixel_experience_2020.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_experience_2020.xml
 
 # APNs
 PRODUCT_COPY_FILES += \
@@ -178,6 +178,12 @@ PRODUCT_PACKAGES += \
 # ImsInit hack
 PRODUCT_PACKAGES += \
     ImsInit
+
+# IMS
+#$(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
+
+# EngineerMode
+#$(call inherit-product, vendor/mediatek/ims/mtk-engi.mk)
 
 PRODUCT_PACKAGES += \
     TrebleApp
