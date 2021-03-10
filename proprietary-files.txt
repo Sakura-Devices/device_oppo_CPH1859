@@ -1,11 +1,7 @@
-
-# Engineer Mode
+# Engineering Mode
 -priv-app/EngineerMode/EngineerMode.apk
 lib/libem_support_jni.so
 lib64/libem_support_jni.so
-
-# HotwordEnrollmentOKGoogle
--priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk
 
 # MTK-IMS
 -priv-app/ImsService/ImsService.apk
