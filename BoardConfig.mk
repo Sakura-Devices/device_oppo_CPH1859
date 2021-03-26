@@ -73,7 +73,6 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --second_offset $(BOARD_SECOND_OFFSET) --tags_offset $(BOARD_TAGS_OFFSET) --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_SOURCE := kernel/oppo/mt6771
 TARGET_KERNEL_CONFIG := oppo6771_17065_defconfig
-TARGET_BOARD_SUFFIX := _64
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2020-05-05
