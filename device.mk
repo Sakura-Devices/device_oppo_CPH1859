@@ -41,8 +41,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Flipendo
 
+# Flipendo config
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/pixel_experience_2020.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_experience_2020.xml
+    $(DEVICE_PATH)/configs/sysconfig/pixel_experience_2020.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_experience_2020.xml
 
 # APNs
 PRODUCT_COPY_FILES += \
@@ -110,14 +111,6 @@ PRODUCT_PACKAGES += \
 # QKsms
 PRODUCT_PACKAGES += \
     qksms
-
-# Removed Packages
-PRODUCT_PACKAGES += \
-    RemovePackages \
-    RemovePackages-1 \
-    RemovePackages-2 \
-    RemovePackages-3
-
 
 # HIDL
 PRODUCT_PACKAGES += \
