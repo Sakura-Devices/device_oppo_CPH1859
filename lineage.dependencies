@@ -14,7 +14,7 @@
   
   {
     "remote"     : "github",
-    "repository" : "PixelExperience/vendor_mediatek_ims",
+    "repository" : "CyberJalagam/vendor_mediatek_ims",
     "target_path": "vendor/mediatek/ims"
     "branch"     : "eleven"
   },
