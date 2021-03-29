@@ -182,6 +182,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
        $(LOCAL_PATH)/permissions/privapp-permissions-me.phh.treble.app.xml:system/etc/permissions/privapp-permissions-me.phh.treble.app.xml
 
+
+# EngineerMode-OSS
+$(call inherit-product, vendor/mediatek/ims/mtk-engi.mk)
+
+# IMS-OSS
+$(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oppo/CPH1859/CPH1859-vendor.mk)
 
