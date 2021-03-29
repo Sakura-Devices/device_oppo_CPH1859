@@ -81,6 +81,13 @@ PRODUCT_COPY_FILES += \
  PRODUCT_PACKAGES += \
      ScreenRecorder
 
+# OppoCamera
+ PRODUCT_PACKAGES += \
+     OppoCamera
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/bin/cameraserver:$(TARGET_COPY_OUT_SYSTEM)/bin/cameraserver
+
 # Misc
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/misc/factory.ini:$(TARGET_COPY_OUT_SYSTEM)/etc/factory.ini \
@@ -89,8 +96,10 @@ PRODUCT_COPY_FILES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.mt6771 \
+    init.volte.rc \
+    cameraserver.rc \
     init.target.rc \
-    set_zram.sh
+    set_zram.sh   
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -98,10 +107,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.3-service.clearkey \
     android.hardware.drm@1.1-service.widevine
-
-# GCam Go
-PRODUCT_PACKAGES += \
-    GCam
 
 # FirefoxLite
 PRODUCT_PACKAGES += \

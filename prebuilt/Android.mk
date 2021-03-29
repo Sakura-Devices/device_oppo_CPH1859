@@ -1,7 +1,7 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := GCam
+LOCAL_MODULE := OppoCamera
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := priv-app/$(LOCAL_MODULE).apk
 LOCAL_CERTIFICATE := PRESIGNED
