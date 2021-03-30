@@ -1,7 +1,5 @@
 # Engineering Mode
 -priv-app/EngineerMode/EngineerMode.apk
-lib/libem_support_jni.so
-lib64/libem_support_jni.so
 
 # MTK-IMS
 -priv-app/ImsService/ImsService.apk
@@ -10,9 +8,13 @@ lib64/libem_support_jni.so
 bin/kpoc_charger
 etc/init/kpoc_charger.rc
 lib/libshowlogo.so
+
+# Blobs
 lib/libsysenv_system.so
 lib64/libsysenv_system.so
 
-# RIL
-lib64/libmtk-ril.so
-
+# Videotelephony
+lib/vendor.mediatek.hardware.videotelephony@1.0.so
+lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
+lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
