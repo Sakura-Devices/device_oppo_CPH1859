@@ -182,6 +182,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
        $(LOCAL_PATH)/permissions/interfaces.xml:system/etc/permissions/interfaces.xml
 
+# Telephony
+PRODUCT_PACKAGES += vendor.mediatek.hardware.videotelephony@1.0
 
 # Privapp-permissions whitelist for PhhTrebleApp
 PRODUCT_COPY_FILES += \
