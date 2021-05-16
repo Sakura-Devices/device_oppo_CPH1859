@@ -1,3 +1,4 @@
+
 #
 # Copyright 2020 The Android Open Source Project
 # Copyright (C) 2020 The LineageOS Project
@@ -36,14 +37,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/r_submix_audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/usb_audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/audio_effects.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.conf
-
-# Flipendo
-PRODUCT_PACKAGES += \
-    Flipendo
-
-# Flipendo config
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/sysconfig/pixel_experience_2020.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_experience_2020.xml
 
 # APNs
 PRODUCT_COPY_FILES += \
