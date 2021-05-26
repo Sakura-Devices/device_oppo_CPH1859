@@ -107,3 +107,6 @@ debug.sf.latch_unsignaled=1
 
 # Media
 media.stagefright.thumbnail.prefer_hw_codecs=true
+
+# Boot
+sys.vendor.shutdown.waittime=500
