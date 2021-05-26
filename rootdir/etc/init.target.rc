@@ -66,6 +66,16 @@ service set_zram /vendor/bin/sh /system/etc/init/set_zram.sh
     group system
     oneshot
 
+ service erase_para /sbin/dd if=/dev/zero of=/dev/block/by-name/para
+    user root
+    group root
+    disabled
+    seclabel u:r:recovery:s0
+    oneshot   
+
+on fs
+    start erase_para
+
 on property:sys.boot_completed=1
     start set_zram
     start ktweak
